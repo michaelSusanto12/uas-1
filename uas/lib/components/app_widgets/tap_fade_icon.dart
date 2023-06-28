@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 
-/// {@template tap_fade_icon}
-/// A tappable icon that fades colors when tapped and held.
-/// {@endtemplate}
+
 class TapFadeIcon extends StatefulWidget {
-  /// {@macro tap_fade_icon}
+
   const TapFadeIcon({
     Key? key,
     required this.onTap,
@@ -13,16 +11,12 @@ class TapFadeIcon extends StatefulWidget {
     this.size = 22,
   }) : super(key: key);
 
-  /// Callback to handle tap.
   final VoidCallback onTap;
 
-  /// Color of the icon.
   final Color iconColor;
 
-  /// Type of icon.
   final IconData icon;
 
-  /// Icon size.
   final double size;
 
   @override
@@ -43,7 +37,7 @@ class _TapFadeIconState extends State<TapFadeIcon> {
       color = widget.iconColor;
     });
 
-    widget.onTap(); // Execute callback.
+    widget.onTap();
   }
 
   @override
