@@ -1,45 +1,32 @@
 import 'package:flutter/material.dart';
 
-/// Global reference to application colors.
 abstract class AppColors {
-  /// Dark color.
   static const dark = Colors.black;
 
   static const light = Color(0xFFFAFAFA);
 
-  /// Grey background accent.
   static const grey = Color(0xFF262626);
 
-  /// Primary text color
   static const primaryText = Colors.white;
 
-  /// Secondary color.
   static const secondary = Color(0xFF0095F6);
 
-  /// Color to use for favorite icons (indicating a like).
   static const like = Colors.red;
 
-  /// Grey faded color.
   static const faded = Colors.grey;
 
-  /// Light grey color
   static const ligthGrey = Color(0xFFEEEEEE);
 
-  /// Top gradient color used in various UI components.
   static const topGradient = Color(0xFFE60064);
 
-  /// Bottom gradient color used in various UI components.
   static const bottomGradient = Color(0xFFFFB344);
 }
 
-/// Global reference to application [TextStyle]s.
 abstract class AppTextStyle {
-  /// A medium bold text style.
   static const textStyleBoldMedium = TextStyle(
     fontWeight: FontWeight.w600,
   );
 
-  /// A bold text style.
   static const textStyleBold = TextStyle(
     fontWeight: FontWeight.bold,
   );
@@ -61,22 +48,18 @@ abstract class AppTextStyle {
   static const textStyleFadedSmallBold = TextStyle(
       color: AppColors.faded, fontWeight: FontWeight.w500, fontSize: 11);
 
-  /// Light text style.
   static const textStyleLight = TextStyle(fontWeight: FontWeight.w300);
 
-  /// Action text
   static const textStyleAction = TextStyle(
     fontWeight: FontWeight.w700,
     color: AppColors.secondary,
   );
 }
 
-/// Global reference to the application theme.
 class AppTheme {
   final _darkBase = ThemeData.dark();
   final _lightBase = ThemeData.light();
 
-  /// Dark theme and its settings.
   ThemeData get darkTheme => _darkBase.copyWith(
         visualDensity: VisualDensity.adaptivePlatformDensity,
         backgroundColor: AppColors.dark,

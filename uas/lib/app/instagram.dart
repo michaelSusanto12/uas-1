@@ -11,7 +11,6 @@ class StreamagramApp extends StatefulWidget {
     required this.appTheme,
   }) : super(key: key);
 
-  /// App's theme data.
   final AppTheme appTheme;
 
   @override
@@ -19,11 +18,9 @@ class StreamagramApp extends StatefulWidget {
 }
 
 class _StreamagramAppState extends State<StreamagramApp> {
-  final _client = StreamFeedClient('hr2gz4f8abxg'); // TODO: Add API Key
+  final _client = StreamFeedClient('hr2gz4f8abxg'); 
   late final appState = AppState(client: _client);
 
-  // Important to only initialize this once.
-  // Unless you want to update the bloc state
   late final feedBloc = FeedBloc(client: _client);
 
   @override
@@ -35,8 +32,6 @@ class _StreamagramAppState extends State<StreamagramApp> {
         theme: widget.appTheme.lightTheme,
         darkTheme: widget.appTheme.darkTheme,
         builder: (context, child) {
-          // Stream Feeds provider to give access to [FeedBloc]
-          // This class comes from Stream Feeds.
           return FeedProvider(
             bloc: feedBloc,
             child: child!,
