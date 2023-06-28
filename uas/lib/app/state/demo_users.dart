@@ -1,6 +1,6 @@
 import 'package:stream_feed_flutter_core/stream_feed_flutter_core.dart';
 
-/// Demo application users.
+
 enum DemoAppUser {
   michael,
   yosia,
@@ -8,9 +8,8 @@ enum DemoAppUser {
   felix,
 }
 
-/// Convenient class Extension on [DemoAppUser] enum
 extension DemoAppUserX on DemoAppUser {
-  /// Convenient method Extension to generate an [id] from [DemoAppUser] enum
+
   String get id => {
         DemoAppUser.michael: 'michael-susanto',
         DemoAppUser.yosia: 'yosia-amadeus',
@@ -18,7 +17,7 @@ extension DemoAppUserX on DemoAppUser {
         DemoAppUser.felix: 'felix-fernando',
       }[this]!;
 
-  /// Convenient method Extension to generate a [name] from [DemoAppUser] enum
+
   String? get name => {
         DemoAppUser.michael: 'Michael Susanto',
         DemoAppUser.yosia: 'Yosia Amadeus',
@@ -26,7 +25,7 @@ extension DemoAppUserX on DemoAppUser {
         DemoAppUser.felix: 'Felix Fernando',
       }[this];
 
-  /// Convenient method Extension to generate [data] from [DemoAppUser] enum
+
   Map<String, Object>? get data => {
         DemoAppUser.michael: {
           'first_name': 'Michael',
@@ -50,9 +49,9 @@ extension DemoAppUserX on DemoAppUser {
         },
       }[this];
 
-  /// Convenient method Extension to generate a [token] from [DemoAppUser] enum
+
   Token? get token => <DemoAppUser, Token>{
-        // TODO: Generate your own tokens if you're using your own API key.
+        
         DemoAppUser.michael: const Token(
             'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoibWljaGFlbC1zdXNhbnRvIn0.NbKaxK8-pfRWKrvcOWf4Vcqn1fHnf3p-6WRMRW51u0A'),
         DemoAppUser.yosia: const Token(
