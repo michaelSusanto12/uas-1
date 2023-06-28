@@ -3,11 +3,9 @@ import 'package:flutter/material.dart';
 import '../../app/app.dart';
 import 'app_widgets.dart';
 
-/// Displays a text field styled to easily add comments to posts.
-///
-/// Quickly add emoji reactions.
+
 class CommentBox extends StatelessWidget {
-  /// Creates a [CommentBox].
+  [CommentBox].
   const CommentBox({
     Key? key,
     required this.commenter,
