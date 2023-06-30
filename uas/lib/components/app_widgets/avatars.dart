@@ -2,13 +2,8 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 import '../../app/app.dart';
-`Avatar.tiny`
-`Avatar.small`
-`Avatar.medium`
-`Avatar.big`
-`Avatar.huge`
-class Atvatar extends StatelessWidget {
 
+class Avatar extends StatelessWidget {
   const Avatar.tiny({
     Key? key,
     required this.streamagramUser,
@@ -18,7 +13,6 @@ class Atvatar extends StatelessWidget {
         fontSize = 12,
         isThumbnail = true,
         super(key: key);
-
 
   const Avatar.small({
     Key? key,
@@ -30,7 +24,6 @@ class Atvatar extends StatelessWidget {
         isThumbnail = true,
         super(key: key);
 
-
   const Avatar.medium({
     Key? key,
     this.hasNewStory = false,
@@ -41,7 +34,6 @@ class Atvatar extends StatelessWidget {
         isThumbnail = true,
         super(key: key);
 
- 
   const Avatar.big({
     Key? key,
     this.hasNewStory = false,
@@ -51,7 +43,6 @@ class Atvatar extends StatelessWidget {
         fontSize = 26,
         isThumbnail = false,
         super(key: key);
-
 
   const Avatar.huge({
     Key? key,
@@ -63,44 +54,35 @@ class Atvatar extends StatelessWidget {
         isThumbnail = false,
         super(key: key);
 
- 
   final bool hasNewStory;
 
-  
   final StreamagramUser streamagramUser;
 
-  
   final double fontSize;
 
   final double _avatarSize;
   final double _coloredCircle;
 
-  
   static const _tinyAvatarSize = 22.0;
   static const _tinyPaddedCircle = _tinyAvatarSize + 2;
   static const _tinyColoredCircle = _tinyPaddedCircle * 2 + 4;
 
-  
   static const _smallAvatarSize = 30.0;
   static const _smallPaddedCircle = _smallAvatarSize + 2;
   static const _smallColoredCircle = _smallPaddedCircle * 2 + 4;
 
- 
   static const _mediumAvatarSize = 40.0;
   static const _mediumPaddedCircle = _mediumAvatarSize + 2;
   static const _mediumColoredCircle = _mediumPaddedCircle * 2 + 4;
 
-  
   static const _largeAvatarSize = 90.0;
   static const _largPaddedCircle = _largeAvatarSize + 2;
   static const _largeColoredCircle = _largPaddedCircle * 2 + 4;
 
-  
   static const _hugeAvatarSize = 120.0;
   static const _hugePaddedCircle = _hugeAvatarSize + 2;
   static const _hugeColoredCircle = _hugePaddedCircle * 2 + 4;
 
-  
   final bool isThumbnail;
 
   @override

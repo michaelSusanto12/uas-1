@@ -3,9 +3,7 @@ import 'package:flutter/material.dart';
 import '../../app/app.dart';
 import 'app_widgets.dart';
 
-
 class CommentBox extends StatelessWidget {
-  [CommentBox].
   const CommentBox({
     Key? key,
     required this.commenter,
