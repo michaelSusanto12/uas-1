@@ -4,9 +4,7 @@ import 'package:stream_feed_flutter_core/stream_feed_flutter_core.dart';
 import '../../app/app.dart';
 import '../app_widgets/app_widgets.dart';
 
-/// Page to find other users and follow/unfollow.
 class SearchPage extends StatelessWidget {
-  /// Create a new [SearchPage].
   const SearchPage({Key? key}) : super(key: key);
 
   @override
@@ -51,7 +49,6 @@ class __UserProfileState extends State<_UserProfile> {
     return StreamagramUser.fromMap(streamUser.data!);
   }
 
-  /// Determine if the current authenticated user is following [user].
   Future<bool> _isFollowingUser(String userId) async {
     return FeedProvider.of(context).bloc.isFollowingFeed(followerId: userId);
   }
