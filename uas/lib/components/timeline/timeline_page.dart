@@ -4,11 +4,7 @@ import 'package:stream_feed_flutter_core/stream_feed_flutter_core.dart';
 import 'package:insta/components/app_widgets/comment_box.dart' as boxkomen;
 import 'package:insta/components/timeline/widgets/post_card.dart' as poskard;
 
-/// {@template timeline_page}
-/// Page to display a timeline of user created posts. Global 'timeline'
-/// {@endtemplate}
 class TimelinePage extends StatefulWidget {
-  /// {@macro timeline_page}
   const TimelinePage({Key? key}) : super(key: key);
 
   @override
