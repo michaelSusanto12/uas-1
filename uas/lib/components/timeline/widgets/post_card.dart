@@ -12,11 +12,7 @@ typedef OnAddComment = void Function(
   String? message,
 });
 
-/// {@template post_card}
-/// A card that displays a user post/activity.
-/// {@endtemplate}
 class PostCard extends StatelessWidget {
-  /// {@macro post_card}
   const PostCard({
     Key? key,
     required this.enrichedActivity,
